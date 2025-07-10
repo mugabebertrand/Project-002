@@ -3,19 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project-002</title>
+    <title>Liner Giphy Search</title>
+    
+    <link rel="stylesheet" href="CSS/style.css">
+  
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-     <h1>Giphy Search engine</h1>
-     <form id="search-form">
-        <input type="text" id="search-box" placeholder="Search any GIF here...">
-        <button>Search</button>
+    <header class="site-header">
+        <div class="site-branding">
+            <h1 class="site-title">Gif Gallery</h1>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-     </form>
-     <div id="search-result"></div>
-     <button id="show-more-btn">Show more</button>
+    <main class="content-area">
+        <h2>Discover your GIF</h2>
+        <form id="search-form">
+            <input type="search" id="search-box" placeholder="Search any GIF here...">
+            <button type="submit">Search</button>
+        </form>
+        <div id="search-result"></div>
+        <button id="show-more-btn">Show more</button>
+    </main>
 
-     <script src="main.js"></script>
+    <script src="JS/main.js"></script>
 </body>
 </html>
+
