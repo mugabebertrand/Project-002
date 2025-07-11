@@ -29,14 +29,15 @@ async function searchGiphy() {
    
     const response = await fetch(url);
     const data = await response.json();
-
-    if (offset === 0) {
-      searchResult.innerHTML = ""; 
-    }
-
     
+
+    // if (offset === 0) {
+    //   searchResult.innerHTML = ""; 
+    // }
+
     const gifs = data.data;
 
+    searchResult.innerHTML = ""; 
     
     if (gifs && gifs.length > 0) {
       
@@ -63,7 +64,7 @@ async function searchGiphy() {
     } else {
       
       if (offset === 0) { 
-        searchResult.innerHTML = "<p>No stickers found for your search. Try a different keyword!</p>";
+        searchResult.innerHTML = "No stickers found for your search. Try a different keyword!";
       }
       showMoreBtn.style.display = "none";
     }
